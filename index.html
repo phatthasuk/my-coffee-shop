@@ -1,0 +1,164 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>ExamFrontEnd</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Nav-bar -->
+    <nav>
+        <nav class="container">
+            <div class="nav-container">
+
+                <div class="logo">
+                    <h3>
+                        <i class="fa-solid fa-mug-hot"> My Coffee Cafe</i></i>
+                    </h3>
+                </div>
+
+                <!-- Menu  -->
+                <ul class="menu" id="myMenu">
+                    <li class="nav-menu" data-target="home"></i>Home</li>
+                    <li class="nav-menu" data-target="about">About</li>
+                    <li class="nav-menu" data-target="services">Services</li>
+                    <li class="nav-menu" data-target="form">Form</li>
+                </ul>
+
+                <!-- Hamberger-Menu  -->
+                <div class="hamberger-menu" onclick="toggleHam(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+            </div>
+        </nav>
+    </nav>
+
+    <!-- Header section  -->
+    <header>
+        <div class="header-container" id="home">
+            <img src="picture/header-picture.png" alt="กำลังดำเนินการแก้ไข">
+        </div>
+    </header>
+
+    <!-- About section-->
+    <div class="container" id="about">
+        <div class="about-section">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1515375295342-ead4ef91028f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="กำลังดำเนินการแก้ไข">
+            </div>
+            <div class="about-content">
+                <h1>About Us</h1>
+                <div>
+                    <p>
+                        ร้านกาแฟสเปเชี่ยล ราคาประหยัด
+                        ที่คุณภาพของเมล็ดกาแฟ ได้ถูกเราคัดสรรมาอย่างพิถีพิถันก่อนนำเสนอให้ถึงมือของลูกค้าทุกท่าน
+                    </p>
+                    <p>
+                        ท่านจะได้ลิ้มรสชาติของกาแฟที่มีคุณภาพ จากโรงคั่วที่มีชื่อเสียงต่างๆทั่วประเทศไทย
+                        เมล็ดของเรามีทั้งคั่วอ่อน คั่วกลาง คั่วเข้ม ซึ่งตอบโจทย์ผู้ชื่นชอบกาแฟทุกท่าน
+                        ในราคาเริ่มต้นเพียง 40 บาทเท่านั้น
+                    </p>
+                    <p>
+                        ร้านของเรายังมีบริการไวไฟฟรี ที่นั่งสำหรับผู้ที่ต้องการพักผ่อนหย่อนใจ
+                        และเบเกอรี่มากมายให้ท่านเลือกชิม
+                    </p>
+                    <p>
+                        ทางร้านหวังว่าจะได้บริการลูกค้าทุกท่านนะครับ
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Services Section-->
+    <div class="container" id="services">
+        <div class="services">
+            <h1>Services</h1>
+            <div class="service-content">
+                <div><img src="picture/service-picture1.jpg" alt="กำลังดำเนินการแก้ไข">
+                    <p>
+                        Cafe
+                    </p>
+                </div>
+                <div><img src="picture/service-picture2.jpg" alt="กำลังดำเนินการแก้ไข">
+                    <p>
+                        Bakery
+                    </p>
+                </div>
+                <div><img src="picture/service-picture3.jpg" alt="กำลังดำเนินการแก้ไข">
+                    <p>
+                        Coffee Bean
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Form Section-->
+    <div class="container" id="form">
+        <div class="form">
+            <h2>มีอะไรจะบอกเรามั้ย?</h2>
+            <form action="#" method="post">
+                <div class="fgroup">
+                    <label for="fname">ชื่อ - นามสกุล</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter Your Name">
+                    <small>error message</small>
+                </div>
+                <div class="fgroup">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email">
+                    <small>error message</small>
+                </div>
+                <div class="fgroup">
+                    <label for="phone">เบอร์โทรศัพท์</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone">
+                    <small>error message</small>
+                </div>
+                <div class="fgroup">
+                    <label for="subject">หัวข้อ</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter Your Subject">
+                    <small>error message</small>
+                </div>
+                <div class="fgroup">
+                    <label for="message">ข้อความ</label>
+                    <textarea id="message" name="message" placeholder="Enter Your Message"></textarea>
+                    <small>error message</small>
+                </div>
+                <div class="fgroup">
+                    <input type="submit" value="ส่งข้อความ">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Button go to top  -->
+    <button id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="social-container">
+                <h1>Contact us</h1>
+                <a href="https://www.facebook.com/phatthasuk/"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com/pp.filter/"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <h4>phatthasuk.p@gmail.com</h4>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
